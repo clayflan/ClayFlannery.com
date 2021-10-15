@@ -54,7 +54,7 @@ body {
     font-style: normal;
     margin: 3vh auto auto auto;
     font-size: 5em;
-    color: salmon;
+    background-color: linear-gradient(120deg, #f6d365 0%, #fda085 100%);;
     transition: 0.2s;
     position: fixed;
 }
@@ -89,6 +89,7 @@ body {
 }
 
 .books .book {
+    
     padding: .5vw;
     max-width: 40px;
     flex-basis: 3vw;
@@ -101,6 +102,16 @@ body {
     font-size: .8vw;
     justify-content: center;
     text-align: center;
+    transition: all .2s ease-in-out
+}
+
+.book:hover {
+    background-color: rgb(154, 180, 190);
+    /* height: 120%;
+    flex-basis: 5vw;
+    max-width: 60px; */
+    transform: scale(1.5)
+    
 }
 
 .bookshelf .shelf {
