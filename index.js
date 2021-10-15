@@ -17,6 +17,6 @@ $(function() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
       document.getElementById("logo").style.fontSize = "2em";
     } else {
-      document.getElementById("logo").style.fontSize = "5em";
+      document.getElementById("logo").style.fontSize = "4em";
     }
   }
