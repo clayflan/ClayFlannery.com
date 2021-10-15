@@ -139,10 +139,10 @@ body {
 
 /* // Extra small devices (portrait phones, less than 576px)
 // Small devices (landscape phones, 576px and up) */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .logo {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .bookshelf {
