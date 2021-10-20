@@ -26,7 +26,8 @@ body {
   }
 
 .bg {
-    background-image: url(/Media/jarretbay.jpg);
+    background-image: linear-gradient(35deg, #667eea 0%, #764ba2 100%);
+    /* background-image: url(/Media/jarretbay.jpg); */
     /* background-color:  rgb(202, 208, 214); */
     height:100vh;
     width: 100vw;
@@ -39,6 +40,8 @@ body {
 .jarret {
     width: 100%;
 }
+
+
 
 .intro {
     display: flex;

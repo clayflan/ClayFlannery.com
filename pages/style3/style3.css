@@ -2,19 +2,22 @@
 .glass {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.1);
-    background: linear-gradient(to top right, rgba(119, 207, 255, 0.111), rgba(196, 105, 85, 0.103));
+    background: linear-gradient(to top right, rgba(58, 102, 126, 0.111), rgba(136, 73, 59, 0.103));
     -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
     border-radius: 2vw;
+    border-right: 1px solid white;
     /* border-right: .2px solid rgb(255, 255, 255); */
 }
 
-.whitebox {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+.orangebox {
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1); 
     border-radius: .3vw;
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: #98c1d9;
+    /* background-color: #ffb703; */
     -webkit-backdrop-filter: blur(5px); 
         backdrop-filter: blur(5px);
+        color: white;
 }
 
 .glass:hover {
@@ -22,19 +25,17 @@
 }
 
 body {
-    margin: auto;
   }
 
+
 .bg {
-    background-image: url(/Media/jarretbay.jpg);
-    /* background-color:  rgb(202, 208, 214); */
+    background-image: linear-gradient( #E7F2F8, #efefef);
     height:100vh;
     width: 100vw;
     background-size: cover;
     position: fixed;
     z-index: -1;
-    opacity: 1000%;
-}
+} 
 
 .jarret {
     width: 100%;
@@ -44,6 +45,25 @@ body {
     display: flex;
     justify-content: center;
     padding: 1vh;
+}
+
+.topLogo {
+    height: 4vh;
+    float: left;
+}
+
+.nav {
+    justify-content: space-around;
+    color: white;
+    position: absolute;
+}
+
+.nav {
+    color: white;
+}
+
+.whitefont {
+    color: white;
 }
 
 .logo {
@@ -64,33 +84,72 @@ body {
 }
 
 .pageHeader {
-    position: fixed;
+    /* position: fixed; */
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
 
-.pageHeader h1 {
+/* Ship Shape logo */
+.pageHeader h1, .pageHeader  {
     font-family: calgary-script-ot,sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3vh;
+    color: #FFA384;
+    
 }
 
-.jumbotron {
+.jt {
+    background-image: url(../../Media/jarretbay.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    margin: 4vh 10vw;
-    height: 100vh;
-    padding:4%;
-    text-align: center;
-    justify-content: center;
+    margin: auto;
     height: 50vh;
+    padding: 0vw;
+    color: white;
+    padding:4vw;
+
+    text-align: center;
+    justify-content: space-between;
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
+
+.leftjt {
+    /* color: #EFE7BC; */
+    color: #22577A;
+    margin: 5vh auto auto 55vw;
+}
+
+.leftjt .btn {
+    background-color: salmon;
+    border: none;
+}
+
+/* .rightjt {
+    
+    background-color:  rgb(202, 208, 214); 
+    height:100%;
+   
+    width: 70vw;
+    flex-basis: 100%;
+    border-radius: 1vh;
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1);
+} */
 
 .quadwrapper{
     display: flex;
     text-align: center;
     flex-direction: row;
-    margin: 4vh 10vw;
+    margin: 4vh auto;
     justify-content: space-between;
+    width:70vw;
 }
 
 .quadwrapper a {
@@ -112,11 +171,13 @@ body {
 
 .dualwrapper{
 
-    margin: 0 10vw;
+    margin: 0 auto;
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: space-between;
+    width:70vw;
+    color: white;
 }
 
 .dual{
@@ -131,6 +192,8 @@ body {
     margin: 10vh 10vw;
     padding: 2vh;
     justify-content: center;
+    width: 70vw;
+    margin: 4vh auto;
     
 }
 
@@ -201,24 +264,41 @@ body {
         width: 100%;
     }
 
+    .quad h2 {
+
+        font-size: .5vw;
+    }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+    .purplebox{
+        border-radius: 2vh;
+    }
 
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+    .quad h2 {
+
+        font-size: 2vw;
+    }
 
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .glass{
-    border-radius: .6vw;
+    .purplebox {
+        border-radius: .6vw;
+    }
+
+    .quad h2 {
+
+        font-size: 2vw;
     }
 }
