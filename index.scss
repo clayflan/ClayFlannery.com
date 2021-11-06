@@ -1,6 +1,6 @@
 
 
-$color1: #f4f4f4;
+$color1: #eeecec;
 $shaddow1:  20px 20px 20px #dddddd,
             -20px -20px 30px #ffffff;
 
@@ -10,6 +10,9 @@ $shaddow2:  20px 20px 40px #bebebe,
 
 $font1: black;
 $gradient1: linear-gradient(to top left, $color1 40%, #e8e9e1 150%);
+
+$jumbocolor: linear-gradient(to top left, #71dce4 40%, #ffb5ff 120%);
+$button: white;
 
 .glass {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -23,7 +26,7 @@ $gradient1: linear-gradient(to top left, $color1 40%, #e8e9e1 150%);
     &:hover {
         -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
-        transition: .2s ease-in-out;
+        transition: .05s ease-in-out;
         border: solid white 2px;
     }
 }
@@ -44,6 +47,8 @@ $gradient1: linear-gradient(to top left, $color1 40%, #e8e9e1 150%);
     background: $gradient1;
 
     box-shadow:  $shaddow1;
+    transition: .2s ease-in-out;
+    
     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
     // border-radius: .3vw;
     // background-color: rgba(255, 255, 255, 0.1); 
@@ -59,6 +64,7 @@ $gradient1: linear-gradient(to top left, $color1 40%, #e8e9e1 150%);
        transform: translateY(-10px);
         transition: .2s ease-in-out;
             -webkit-transition: .2s ease-in-out;
+            box-shadow:  $shaddow2;
     }
     
 }
@@ -124,11 +130,24 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    border-radius: .9vw;
 
-    background: rgb(104, 238, 238);
+    background: $jumbocolor;
+
+    .btn {
+        background-color: $button;
+        color: rgb(94, 94, 94);
+        border: none;
+
+        &:hover {
+            background-color: $button;
+            color: black;
+        }
+    }
 
     &:hover {
         transform: none;
+        box-shadow:  $shaddow1;
         // background-color: rgb(42, 202, 202);
     }
 

@@ -13,8 +13,8 @@
 .glass:hover {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .05s ease-in-out;
+  transition: .05s ease-in-out;
   border: solid white 2px;
 }
 
@@ -31,10 +31,12 @@
 
 .neo {
   border-radius: 1.75vw;
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(40%, #f4f4f4), color-stop(150%, #e8e9e1));
-  background: linear-gradient(to top left, #f4f4f4 40%, #e8e9e1 150%);
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(40%, #eeecec), color-stop(150%, #e8e9e1));
+  background: linear-gradient(to top left, #eeecec 40%, #e8e9e1 150%);
   -webkit-box-shadow: 20px 20px 20px #dddddd, -20px -20px 30px #ffffff;
           box-shadow: 20px 20px 20px #dddddd, -20px -20px 30px #ffffff;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
   color: black;
 }
 
@@ -43,6 +45,8 @@
           transform: translateY(-10px);
   transition: .2s ease-in-out;
   -webkit-transition: .2s ease-in-out;
+  -webkit-box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+          box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
 }
 
 body {
@@ -50,7 +54,7 @@ body {
 }
 
 .bg {
-  background-color: #f4f4f4;
+  background-color: #eeecec;
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -115,12 +119,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #68eeee;
+  border-radius: .9vw;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(40%, #71dce4), color-stop(120%, #ffb5ff));
+  background: linear-gradient(to top left, #71dce4 40%, #ffb5ff 120%);
+}
+
+.jumbotron .btn {
+  background-color: white;
+  color: #5e5e5e;
+  border: none;
+}
+
+.jumbotron .btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .jumbotron:hover {
   -webkit-transform: none;
           transform: none;
+  -webkit-box-shadow: 20px 20px 20px #dddddd, -20px -20px 30px #ffffff;
+          box-shadow: 20px 20px 20px #dddddd, -20px -20px 30px #ffffff;
 }
 
 .jumbotron .socials {
