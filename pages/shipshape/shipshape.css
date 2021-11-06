@@ -121,13 +121,15 @@ body {
 
 .rightjt {
     background-image: url(../../Media/jarretbay.jpg) ;
+    
     /* background-color:  rgb(202, 208, 214); */
     height:100%;
     background-size: cover;
     width: 70vw;
     flex-basis: 100%;
     border-radius: 1vh;
-    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1);
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.267),
+                inset 0px 0px 2vw rgb(255, 255, 255);
 }
 
 .quadwrapper{

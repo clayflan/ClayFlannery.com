@@ -1,0 +1,216 @@
+@import url(breakpoints/breakpoints.scss);
+
+//variables
+$font1: #bfc3ce;
+$font2: hotpink;
+
+$background1: #191919;
+$background2: #161616;
+$bordercolor: #1e1e1e;
+
+$transitiontime: .4s;
+
+$activegradient: linear-gradient(to left, #fa709a 10%, #fee140 100%);
+//$activegradient: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+
+
+$activecolor: #fa709a;
+
+body, html {
+
+    width: 100vw;
+    margin: 0;
+	padding: 0;
+
+}
+
+.header {
+
+
+    // background-color: grey;
+    border-bottom: solid $bordercolor 1px;
+    background-color: $background1;
+
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    color: $font1;
+    margin: 0;
+	padding: 0;
+    z-index: 1;
+
+}
+
+.sidebar {
+
+    padding: 35px;
+    height: 100vh;
+    position: fixed;
+    width: 8vw;
+    margin: 7vh 0 0 0;
+    
+    border-right: solid $bordercolor 1px;
+    display: flex;
+    flex-direction:column;
+
+    overflow: hidden;
+    
+    background-color: $background2;
+    color:$font1;
+
+    
+
+    .nav{
+        margin: 0 0 0 0;
+    }
+
+    //navigation items
+    a, button {
+
+        font-family: Raleway, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 22px;
+
+        padding: 0px 0px 0px 0px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        //justify-content: center;
+        align-items: center;
+        
+        color: $font1;
+        border: none;
+        background: none;
+        
+        cursor: pointer;
+        outline: none;
+        transition: .2s ease;
+        margin: 10px auto 10px 0;
+        width: 100%;
+        transition: .15s ease;   
+
+        &:hover {
+            color: $activecolor;
+            
+
+        }
+
+        // &:focus{
+        //     color: chartreuse;
+        // }
+    
+        p {
+
+            text-align: left;
+            transition: .15s ease; 
+            margin-left: 20px;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+            transform: translateX(.2vw);
+            }
+        }
+
+        i {
+
+
+
+            &:hover {
+
+            }
+        }
+    }
+
+    
+
+    .fa-chevron-up {
+        // flex-grow:1;
+        margin: auto 0 auto auto;
+    }
+
+    
+
+    .dropmenu {
+        
+        display: none;
+        // background-color: #262626;
+        padding-left: 1.5vw;
+        // transition: 1s ease;
+        align-items: center;
+    }
+
+    .dropmenu a {
+        height: 15px;
+        
+    }
+}
+
+.activepage {
+    //background: -webkit-linear-gradient(#eee, #333);
+    background-image: $activegradient;
+    //background-image: linear-gradient(to right, #000000 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activeicon {
+    color: $activecolor;
+}
+
+.data {
+
+    margin: 0 0 0 0;
+    padding: 7vh 0 0 8vw;
+    background-color: $background1;
+    //display:flex;
+    height: 100vh;
+    //overflow: scroll;
+    z-index: -1;
+
+    .quadwrapper{
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        margin: 4vh 5vw;
+        justify-content: space-between;
+    }
+
+    .quadwrapper a {
+        flex-basis: 24%;
+        text-decoration: none;
+    }
+
+    .quad{
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .quad h2 { 
+        margin: auto;
+        text-decoration: none;
+        
+    }
+
+    .glass {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
+        background: linear-gradient(to top right, rgba(119, 207, 255, 0.111), rgba(196, 105, 85, 0.103));
+        -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+        border-radius: .25vw;
+        /* border-right: .2px solid rgb(255, 255, 255); */
+    }
+
+    .glass:hover {
+        -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        transition: .2s ease-in-out;
+        border: solid white 2px;
+    }
+
+}
+
