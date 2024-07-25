@@ -1,7 +1,7 @@
 
 
 $color1: #eeecec;
-$shaddow1:  20px 20px 20px #dddddd,
+$shaddow1:  20px 20px 15px #e2e2e2,
             -20px -20px 30px #ffffff;
 
 $color2: #c4cfd1;
@@ -11,7 +11,7 @@ $shaddow2:  20px 20px 40px #bebebe,
 $font1: black;
 $gradient1: linear-gradient(to top left, $color1 40%, #e8e9e1 150%);
 
-$jumbocolor: linear-gradient(to top left, #71dce4 40%, #ffb5ff 120%);
+$jumbocolor: linear-gradient(to top left, #80e2e9 40%, #8db2f7 120%);
 $button: white;
 
 .glass {
@@ -61,7 +61,7 @@ $button: white;
         //-webkit-backdrop-filter: blur(5px);
         //    backdrop-filter: blur(5px);
        
-       transform: translateY(-10px);
+       transform: translateY(-7px);
         transition: .2s ease-in-out;
             -webkit-transition: .2s ease-in-out;
             box-shadow:  $shaddow2;
@@ -159,12 +159,23 @@ body {
     }
 }
 
+.projects {
+    
+    margin-top: 5vh;
+
+    .title {
+        margin-left: 10vw;
+    }
+
+}
+
 .quadwrapper{
     display: flex;
     text-align: center;
     flex-direction: row;
     margin: 4vh 10vw;
     justify-content: space-between;
+
 
     a {
         flex-basis: 24%;

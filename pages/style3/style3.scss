@@ -1,0 +1,401 @@
+
+.glass {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to top right, rgba(58, 102, 126, 0.111), rgba(136, 73, 59, 0.103));
+    -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+    border-radius: 2vw;
+    border-right: 1px solid white;
+    /* border-right: .2px solid rgb(255, 255, 255); */
+}
+
+.orangebox {
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1); 
+    border-radius: .3vw;
+    background-color: #98c1d9;
+    /* background-color: #ffb703; */
+    -webkit-backdrop-filter: blur(5px); 
+        backdrop-filter: blur(5px);
+    // color: black;
+}
+
+.glass:hover {
+    top: -2vw;
+}
+
+body {
+  }
+
+
+.bg {
+    background-image: linear-gradient( #E7F2F8, #efefef);
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+} 
+
+.jarret {
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+}
+
+.topLogo {
+    height: 4vh;
+    float: left;
+}
+
+.nav {
+    justify-content: space-around;
+    color: white;
+    position: absolute;
+}
+
+.nav {
+    color: white;
+}
+
+.whitefont {
+    color: white;
+}
+
+.logo {
+    font-family: calgary-script-ot,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1vh auto auto auto;
+    font-size: 5em;
+    transition: 0.2s;
+    position: fixed;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+
+}
+
+.pageHeader {
+    /* position: fixed; */
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Ship Shape logo */
+.pageHeader h1, .pageHeader  {
+    font-family: calgary-script-ot,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    color: #FFA384;
+    
+
+}
+
+// .jumbotron {
+
+// display: flex;
+
+
+// }
+
+.jt {
+    // background-image: url(../../Media/jarretbay.jpg) ;
+    // background-size:cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+
+    margin: auto;
+    height: 50vh;
+    padding: 0vw;
+    color: white;
+    padding:4vw;
+    width: 100%;
+
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: row;
+
+    // * { box-sizing: border-box; }
+    .video-background {
+        background: #000;
+        position: fixed;
+        top: 0; 
+        right: 0; 
+        bottom: 0; 
+        left: 0;
+        z-index: -99;
+        height: 100vw;
+        width: 100vh;
+        
+
+        .video-foreground {
+
+            position: absolute;
+            
+            // left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            // top: 100%;
+            // margin: auto;
+
+            iframe {
+                // margin-top: -50%;
+                // height: 200%;
+                width: 100%;
+                height: 100%;
+                // position: absolute;
+                //pointer-events: none;
+                top: -50%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+
+    .vidtop-content {
+        // top: 0;
+        color: #fff;
+    }
+    .vid-info { 
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        width: 33%; 
+        background: rgba(0,0,0,0.3); 
+        color: #fff; 
+        padding: 1rem; 
+        font-family: Avenir, Helvetica, sans-serif; 
+    }
+
+    .vid-info h1 { 
+        font-size: 2rem; 
+        font-weight: 700; 
+        margin-top: 0; 
+        line-height: 1.2; 
+    }
+    .vid-info a { 
+        display: block; 
+        color: #fff; 
+        text-decoration: none; 
+        background: rgba(0,0,0,0.5); 
+        transition: .6s background; 
+        border-bottom: none; 
+        margin: 1rem auto; 
+        text-align: center; 
+    }
+
+    // @media (min-aspect-ratio: 16/9) {
+    // .video-foreground { height: 300%; top: -100%; }
+    // }
+    // @media (max-aspect-ratio: 16/9) {
+    // .video-foreground { width: 300%; left: -100%; }
+    // }
+    // @media all and (max-width: 600px) {
+    // .vid-info { width: 50%; padding: .5rem; }
+    // .vid-info h1 { margin-bottom: .2rem; }
+    // }
+    // @media all and (max-width: 500px) {
+    // .vid-info .acronym { display: none; }
+    // }
+}
+
+
+
+
+.leftjt {
+    /* color: #EFE7BC; */
+    color: #22577A;
+    margin: 5vh auto auto 55vw;
+}
+
+.leftjt .btn {
+    background-color: salmon;
+    border: none;
+}
+
+/* .rightjt {
+    
+    background-color:  rgb(202, 208, 214); 
+    height:100%;
+   
+    width: 70vw;
+    flex-basis: 100%;
+    border-radius: 1vh;
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1);
+} */
+
+.quadwrapper{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 4vh auto;
+    justify-content: space-between;
+    width:70vw;
+}
+
+.quadwrapper a {
+    flex-basis: 24%;
+    text-decoration: none;
+}
+
+.quad{
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.quad h2 { 
+    margin: auto;
+    text-decoration: none;
+    
+}
+
+.dualwrapper{
+
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width:70vw;
+    color: white;
+}
+
+.dual{
+
+    height: 30vw;
+    flex-basis: 48.5%;
+    
+}
+
+.bookshelf {
+    height: 25vh;
+    margin: 10vh 10vw;
+    padding: 2vh;
+    justify-content: center;
+    width: 70vw;
+    margin: 4vh auto;
+    
+}
+
+.bookshelf .books{
+    margin: 0 auto .1vw auto;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.books .book {
+    
+    padding: .5vw;
+    max-width: 40px;
+    flex-basis: 3vw;
+    background: linear-gradient(265deg, rgb(102, 102, 102) -10%, rgb(73, 73, 73) 49%);
+    border-radius: .3vw;
+    writing-mode: vertical-rl;
+    overflow:hidden;
+    margin: 0 .1vh 0 .1vh;
+    font-size: .9vw;
+    justify-content: center;
+    text-align: center;
+    transition: all .1s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+.book:hover {
+    background: linear-gradient(265deg, rgb(134, 134, 134) -10%, rgb(99, 99, 99) 49%);
+    /* height: 120%;
+    flex-basis: 5vw;
+    max-width: 60px; */
+    transform: scale(1.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bookshelf .shelf {
+    width:80%;
+    background-image: linear-gradient(456deg, #c79081 0%, #dfa579 100%);
+    height: 1vw;
+    border-radius: .5vw;
+    margin: auto;
+    border: 2px solid #b18275;
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// Small devices (landscape phones, 576px and up) */
+@media (max-width: 800px) {
+
+    .logo {
+        font-size: 4em;
+    }
+
+    .bookshelf {
+        height: 12vh;  
+        color:tomato;
+    }
+
+    .bg{
+        background-image: url(/Media/jarretbay.jpg) center center fixed;
+        height:100%;
+        width: 100%;
+    }
+
+    .quad h2 {
+
+        font-size: .5vw;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .purplebox{
+        border-radius: 2vh;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .quad h2 {
+
+        font-size: 2vw;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .purplebox {
+        border-radius: .6vw;
+    }
+
+    .quad h2 {
+
+        font-size: 2vw;
+    }
+}
