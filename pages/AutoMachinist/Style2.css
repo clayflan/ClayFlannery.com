@@ -180,6 +180,29 @@ body {
     background-color: #FF6B6B;
 }
 
+/* Full-width Divs */
+.full-width-div {
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    background-color: #F7FFF7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-div h2 {
+    font-size: 2.5rem;
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.full-width-div p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* About Section */
 .dualwrapper {
     margin: 6vh auto;
@@ -286,6 +309,18 @@ body {
     .bookshelf {
         width: 90vw;
     }
+
+    .full-width-div {
+        padding: 2rem 1rem;
+    }
+
+    .full-width-div h2 {
+        font-size: 2rem;
+    }
+
+    .full-width-div p {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
@@ -305,7 +340,7 @@ body {
     to { opacity: 1; }
 }
 
-.jumbotron, .quadwrapper, .dualwrapper, .bookshelf {
+.jumbotron, .quadwrapper, .dualwrapper, .bookshelf, .full-width-div {
     animation: fadeIn 1s ease-out;
 }
 
