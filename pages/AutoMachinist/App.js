@@ -1,13 +1,8 @@
-import React from 'react';
-import * as THREE from 'three';
-
-function App() {
-    return (
-      <div>
-        <h1>React + Three.js Example</h1>
-        <canvas id="canvas" width={640} height={480} />
-      </div>
+function App23() {
+    return React.createElement(
+        'div',
+        null,
+        React.createElement('h1', null, 'React + Three.js Example'),
+        React.createElement('canvas', { id: 'canvas', width: 640, height: 480 })
     );
 }
-  
-export default App;
