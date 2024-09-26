@@ -1,3 +1,17 @@
+import * as React from 'react';
+import * as THREE from 'three';
+
+function App23() {
+    return (
+      <div>
+        <h1>React + Three.js Example</h1>
+        <canvas id="canvas" width={640} height={480} />
+      </div>
+    );
+  }
+  
+  export default App23;
+
 document.getElementById('file-form').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent default form behavior
     

@@ -1,0 +1,19 @@
+function generateOrderOfOperations(modelFeatures) {
+  const operations = [];
+
+  if (modelFeatures.largestFlatFace) {
+    operations.push("1. Face milling on largest flat surface");
+  }
+
+  if (modelFeatures.holes) {
+    operations.push("2. Drill holes");
+  }
+
+  if (modelFeatures.pockets) {
+    operations.push("3. Mill pockets");
+  }
+
+  // Add more operations based on other features
+
+  return operations;
+}
