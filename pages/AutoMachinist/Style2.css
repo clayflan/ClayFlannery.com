@@ -1,308 +1,209 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
+.bg {
+    background-image: linear-gradient(#E7F2F8, #efefef);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Header and Navigation */
+.pageHeader {
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pageHeader h1 {
+    font-family: calgary-script-ot, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    color: #FFA384;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFA384;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: transparent;
+    padding: 4rem 0;
+}
+
+.jt {
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    padding: 0;
+    color: #333;
+}
+
+.leftjt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+}
+
+.rightjt {
+    flex: 1;
+    background-image: url(../../Media/jarretbay.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vh;
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.267);
+}
+
+/* Services Section */
+.quadwrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 4vh auto;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.quad {
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(94, 94, 94, 0.2);
+}
+
+.quad h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* File Upload Section */
+#file-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#file-upload {
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.dualwrapper {
+    margin: 4vh auto;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.dual {
+    height: auto;
+    flex-basis: 48.5%;
+    padding: 2rem;
+}
+
+/* Contact Section */
+.bookshelf {
+    margin: 4vh auto;
+    padding: 2rem;
+    width: 70vw;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4vh;
+}
+
+.footer a {
+    color: #FFA384;
+}
+
+/* Utility Classes */
+.orangebox {
+    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1);
+    border-radius: 0.3vw;
+    background-color: #98c1d9;
+    color: white;
+}
 
 .glass {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.1);
     background: linear-gradient(to top right, rgba(58, 102, 126, 0.111), rgba(136, 73, 59, 0.103));
-    -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     border-radius: 2vw;
     border-right: 1px solid white;
-    /* border-right: .2px solid rgb(255, 255, 255); */
 }
 
-.orangebox {
-    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.1); 
-    border-radius: .3vw;
-    background-color: #98c1d9;
-    /* background-color: #ffb703; */
-    -webkit-backdrop-filter: blur(5px); 
-        backdrop-filter: blur(5px);
-        color: white;
-}
-
-.glass:hover {
-    top: -2vw;
-}
-
-body {
-  }
-
-
-.bg {
-    background-image: linear-gradient( #E7F2F8, #efefef);
-    height:100vh;
-    width: 100vw;
-    background-size: cover;
-    position: fixed;
-    z-index: -1;
-} 
-
-.jarret {
-    width: 100%;
-}
-
-.intro {
-    display: flex;
-    justify-content: center;
-    padding: 1vh;
-}
-
-.topLogo {
-    height: 4vh;
-    float: left;
-}
-
-.nav {
-    justify-content: space-around;
-    color: white;
-}
-
-.nav-link {
-    color: white;
-}
-
-.whitefont {
-    color: white;
-}
-
-.logo {
-    font-family: calgary-script-ot,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 1vh auto auto auto;
-    font-size: 5em;
-    transition: 0.2s;
-    position: fixed;
-    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
-    background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-
-}
-
-.pageHeader {
-    /* position: fixed; */
-    padding: 2vh;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-/* Ship Shape logo */
-.pageHeader h1, .pageHeader  {
-    font-family: calgary-script-ot,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vh;
-    color: #FFA384;
-    
-}
-
-.jt {
-
-    margin: auto;
-    height: 100vh;
-    text-align: center;
-    justify-content: space-between;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    max-width: 70%;
-    padding: 0vw;
-    color: white;
-}
-
-
-.leftjt {
-    color: #EFE7BC;
-}
-
-.rightjt {
-    background-image: url(../../Media/jarretbay.jpg) ;
-    
-    /* background-color:  rgb(202, 208, 214); */
-    height:100%;
-    background-size: cover;
-    width: 70vw;
-    flex-basis: 100%;
-    border-radius: 1vh;
-    box-shadow: 0 4px 30px rgba(94, 94, 94, 0.267),
-                inset 0px 0px 2vw rgb(255, 255, 255);
-}
-
-.quadwrapper{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    margin: 4vh auto;
-    justify-content: space-between;
-    width:70vw;
-}
-
-.quadwrapper a {
-    flex-basis: 24%;
-    text-decoration: none;
-}
-
-.quad{
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-}
-
-.quad h2 { 
-    margin: auto;
-    text-decoration: none;
-    
-}
-
-//
-#file-form {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#file-upload {
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-button[type="submit"] {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #4CAF50;
-    cursor: pointer;
-}
-
-#uploaded-files {
-    margin-top: 10px;
-}
-//
-
-.dualwrapper{
-
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width:70vw;
-    color: white;
-}
-
-.dual{
-
-    height: 30vw;
-    flex-basis: 48.5%;
-    
-}
-
-.bookshelf {
-    height: 25vh;
-    margin: 10vh 10vw;
-    padding: 2vh;
-    justify-content: center;
-    width: 70vw;
-    margin: 4vh auto;
-    
-}
-
-.bookshelf .books{
-    margin: 0 auto .1vw auto;
-    height: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 60%;
-}
-
-.books .book {
-    
-    padding: .5vw;
-    max-width: 40px;
-    flex-basis: 3vw;
-    background: linear-gradient(265deg, rgb(102, 102, 102) -10%, rgb(73, 73, 73) 49%);
-    border-radius: .3vw;
-    writing-mode: vertical-rl;
-    overflow:hidden;
-    margin: 0 .1vh 0 .1vh;
-    font-size: .9vw;
-    justify-content: center;
-    text-align: center;
-    transition: all .1s ease-in-out;
-    color: rgb(255, 255, 255);
-}
-
-.book:hover {
-    background: linear-gradient(265deg, rgb(134, 134, 134) -10%, rgb(99, 99, 99) 49%);
-    /* height: 120%;
-    flex-basis: 5vw;
-    max-width: 60px; */
-    transform: scale(1.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-
-.bookshelf .shelf {
-    width:80%;
-    background-image: linear-gradient(456deg, #c79081 0%, #dfa579 100%);
-    height: 1vw;
-    border-radius: .5vw;
-    margin: auto;
-    border: 2px solid #b18275;
-}
-
-@media (prefers-color-scheme: dark) {
-
-}
-
-/* // Extra small devices (portrait phones, less than 576px)
-// Small devices (landscape phones, 576px and up) */
+/* Responsive Design */
 @media (max-width: 800px) {
+    .jt {
+        flex-direction: column;
+        height: auto;
+    }
 
-    .logo {
-        font-size: 4em;
+    .rightjt {
+        height: 30vh;
+        margin-top: 2rem;
+    }
+
+    .quadwrapper, .dualwrapper {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .quad, .dual {
+        margin-bottom: 2rem;
     }
 
     .bookshelf {
-        height: 12vh;  
-        color:tomato;
+        width: 90vw;
     }
-
-    .bg{
-        background-image: url(/Media/jarretbay.jpg) center center fixed;
-        height:100%;
-        width: 100%;
-    }
-
 }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-    .purplebox{
-        border-radius: 2vh;
+@media (min-width: 801px) and (max-width: 1200px) {
+    .quadwrapper {
+        flex-wrap: wrap;
     }
 
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    .purplebox {
-        border-radius: .6vw;
+    .quad {
+        flex-basis: 48%;
+        margin-bottom: 2rem;
     }
 }
