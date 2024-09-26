@@ -159,6 +159,34 @@ body {
     
 }
 
+//
+#file-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#file-upload {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+#uploaded-files {
+    margin-top: 10px;
+}
+//
+
 .dualwrapper{
 
     margin: 0 auto;

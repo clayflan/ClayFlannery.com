@@ -104,7 +104,15 @@
      <div class="quadwrapper">
          <a href="../../index.html">
              <div class="quad orangebox">    
-                 <h2 class="display-4">Style 1</h2>
+                 <h2 class="display-4">Upload 3D Model File</h2>
+                 <form id="file-form">
+                     <input type="file" id="file-upload" accept=".stl,.step">
+                     <button type="submit">Upload</button>
+                 </form>
+             
+                 <!-- Optional: Display uploaded file list -->
+                 <div id="uploaded-files"></div>
+             
              </div>
          </a>
          <a href="../style2/style2.html">
