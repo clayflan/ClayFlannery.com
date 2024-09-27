@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App23 from './App';
-import { ThreeScene } from './Components/3DSceneSetUp';
+import App from './src/components/App';
+import { ThreeScene } from './src/components/ThreeSceneSetUp';
 
 const root = document.getElementById('root');
 
 ReactDOM.render(
   React.createElement(React.StrictMode, null,
-    React.createElement(App23)
+    React.createElement(App)
   ),
   root
 );
