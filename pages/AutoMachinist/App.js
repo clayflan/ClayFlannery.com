@@ -16,7 +16,7 @@ function App23() {
       const canvas = document.getElementById('canvas');
   
       if (canvas) {
-        initialize3DScene(canvas); // Call the function to set up the scene
+        ThreeScene(canvas); // Call the function to set up the scene
       }
   
       return () => {
