@@ -11,7 +11,7 @@ const ThreeScene = ({ file }) => {
     if (!file) {
       // Create a default cube geometry and material
       geometry = new THREE.BoxGeometry(50, 50, 50);
-      material = new THREE.MeshNormalMaterial();
+      material = new THREE.MeshBasicMaterial();
     } else {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
