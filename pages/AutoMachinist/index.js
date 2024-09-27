@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App23 from './App';
-import main.js from './main';
 
 const root = document.getElementById('root');
 
