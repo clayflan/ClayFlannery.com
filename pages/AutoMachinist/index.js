@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App23 from './App';
+import { ThreeScene } from './Components/3DSceneSetUp';
 
 const root = document.getElementById('root');
 

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
+import { ThreeScene } from './Components/3DSceneSetUp';
 
 const ThreeScene = ({ file }) => {
   const mountRef = useRef(null);  // Create a ref to attach the Three.js canvas

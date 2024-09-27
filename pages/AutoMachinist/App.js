@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import { ThreeScene } from './Components/3DSceneSetUp';
+
 function App23() {
     return React.createElement(
         'div',
