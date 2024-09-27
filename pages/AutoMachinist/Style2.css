@@ -129,6 +129,14 @@ nav ul li a:hover {
     color: #fff;
 }
 
+
+canvas {
+    position:fixed;
+    top:0;
+    left:0;
+
+}
+
 /* Services Section */
 .services {
     padding: 5rem 2rem;
