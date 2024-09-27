@@ -8,11 +8,9 @@ const ThreeScene = ({ file }) => {
   let material;
 
   useEffect(() => {
-    if (!file) return;
-
     if (!file) {
       // Create a default cube geometry and material
-      geometry = new THREE.BoxGeometry(1, 1, 1);
+      geometry = new THREE.BoxGeometry(50, 50, 50);
       material = new THREE.MeshNormalMaterial();
     } else {
     const scene = new THREE.Scene();
@@ -23,8 +21,6 @@ const ThreeScene = ({ file }) => {
     mountRef.current.appendChild(renderer.domElement);
 
     const loader = new STLLoader();
-    loader.load(URL.createObjectURL(file), (geometry) => {
-      const material = new THREE.MeshNormalMaterial();
       geometry = null; // Reset the default geometry
       loader.load(URL.createObjectURL(file), (loadedGeometry) => {
         geometry = loadedGeometry;
