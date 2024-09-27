@@ -1,8 +1,4 @@
 
-import React, { useRef, useEffect } from 'react';
-import * as THREE from 'three';
-
-
 // File upload functionality
 document.addEventListener('DOMContentLoaded', function() {
     const fileForm = document.getElementById('file-form');
