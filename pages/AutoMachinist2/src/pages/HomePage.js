@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThreeScene from '../components/ThreeSceneSetUp';
-import './styles/App.css';
+import '../styles/App.css';
 
 const HomePage = () => {
   return (

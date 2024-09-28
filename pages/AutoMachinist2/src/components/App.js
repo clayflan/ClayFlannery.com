@@ -7,12 +7,12 @@ import AITools from '../pages/AITools';
 import Pricing from '../pages/Pricing';
 import LogIn from '../pages/LogIn';
 import SignUp from '../pages/SignUp';
-import './styles/App.css';
+import '../styles/App.css';
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
 function App() {
   return (
-    <Router basename='/pages/AutoMachinist2/src/pages'>
+    <Router basename='{process.env.PUBLIC_URL}'>
       <div className="App">
         <Header />
         <Routes>
