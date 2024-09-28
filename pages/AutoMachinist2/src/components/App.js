@@ -12,7 +12,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <Router basename='AutoMachinist.com'>
+    <Router basename='{process.env.PUBLIC_URL}'>
       <div className="App">
         <Header />
         <Routes>
