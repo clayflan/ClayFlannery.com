@@ -27,11 +27,11 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/pages/automachinist2/public/index.html">  {/* Removed the basename for now */}
+    <Router basename="/pages/automachinist2/">  {/* Removed the basename for now */}
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/HomePage" element={<HomePage />} />  {/* Root route within /automachinist */}
+          <Route path="/" element={<HomePage />} />  {/* Root route within /automachinist */}
           <Route path="/AITools" element={<AITools />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/LogIn" element={<LogIn />} />
