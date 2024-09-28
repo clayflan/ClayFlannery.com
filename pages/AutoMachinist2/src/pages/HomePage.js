@@ -6,7 +6,7 @@ import '../styles/App.css';
 const HomePage = () => {
   return (
     <main>
-      <section id="homepage" className="hero">
+      <section id="home" className="hero">
 
       console.log('HomePage component rendered');
       return <h1>Welcome to the Home Page!</h1>;
