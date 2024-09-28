@@ -11,6 +11,23 @@ import '../styles/App.css';
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
 function App() {
+
+  const history = useNavigate(); // Import useNavigate from react-router-dom
+
+  useEffect(() => {
+    // Handle popstate event to manage back button navigation
+    const handlePopState = () => {
+      console.log('User navigated using back button');
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
+
   return (
     <Router basename='{process.env.PUBLIC_URL}'>
       <div className="App">
