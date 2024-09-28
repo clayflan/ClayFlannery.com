@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/pages/automachinist2/src/pages">  {/* Removed the basename for now */}
+    <Router basename="/pages/automachinist2/public/index.html">  {/* Removed the basename for now */}
       <div className="App">
         <Header />
         <Routes>
