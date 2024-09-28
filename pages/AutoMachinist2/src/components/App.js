@@ -8,7 +8,6 @@ import Pricing from '../pages/Pricing';
 import LogIn from '../pages/LogIn';
 import SignUp from '../pages/SignUp';
 import '../styles/App.css';
-<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
 function App() {
 
