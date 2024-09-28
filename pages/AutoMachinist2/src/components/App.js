@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';  // Correct imports
 import Header from './Header';
 import Footer from './Footer';
 import HomePage from '../pages/HomePage';
@@ -10,8 +10,7 @@ import SignUp from '../pages/SignUp';
 import '../styles/App.css';
 
 function App() {
-
-  const history = useNavigate(); // Import useNavigate from react-router-dom
+  const navigate = useNavigate(); // Use navigate properly
   const location = useLocation();
 
   useEffect(() => {
@@ -27,25 +26,17 @@ function App() {
     };
   }, []);
 
-  // Optionally, you can save and restore state here if needed
-  useEffect(() => {
-    const storedFormState = localStorage.getItem('formState');
-    if (storedFormState) {
-      setFormValues(JSON.parse(storedFormState)); // Assuming you have a way to set form values
-    }
-  }, []);
-
   return (
-    <Router basename='{/pages/AutoMachinist/src/pages}'>
+    <Router>  {/* Removed the basename for now */}
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />  {/* Default route for homepage */}
           <Route path="/AITools" element={<AITools />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<HomePage />} />  {/* Wildcard route to handle non-existing pages */}
         </Routes>
         <Footer />
       </div>
@@ -54,4 +45,3 @@ function App() {
 }
 
 export default App;
-
