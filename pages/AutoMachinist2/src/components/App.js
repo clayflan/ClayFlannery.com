@@ -27,6 +27,13 @@ function App() {
     };
   }, []);
 
+  // Optionally, you can save and restore state here if needed
+  useEffect(() => {
+    const storedFormState = localStorage.getItem('formState');
+    if (storedFormState) {
+      setFormValues(JSON.parse(storedFormState)); // Assuming you have a way to set form values
+    }
+  }, []);
 
   return (
     <Router basename='{process.env.PUBLIC_URL}'>
