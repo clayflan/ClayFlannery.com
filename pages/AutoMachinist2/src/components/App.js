@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename='/pages/AutoMachinist2'>
+    <Router basename='../pages/AutoMachinist2'>
       <div className="App">
         <Header />
         <Routes>
