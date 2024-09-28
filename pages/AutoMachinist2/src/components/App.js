@@ -14,8 +14,8 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/ai-tools" element={<AITools />} />
+          <Route path="/AutoMachinist" element={<HomePage />} />
+          <Route path="/AITools" element={<AITools />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
