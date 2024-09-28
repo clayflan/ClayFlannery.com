@@ -40,7 +40,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/HomePage" element={<HomePage />} />
           <Route path="/AITools" element={<AITools />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/LogIn" element={<LogIn />} />
