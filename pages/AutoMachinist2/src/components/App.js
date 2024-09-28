@@ -12,13 +12,13 @@ import './styles/App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename='AutoMachinist.com'>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="../pages/Homepage" element={<HomePage />} />
-          <Route path="../pages/AITools" element={<AITools />} />
-          <Route path="../pages//Pricing" element={<Pricing />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/AITools" element={<AITools />} />
+          <Route path="/Pricing" element={<Pricing />} />
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="*" element={<HomePage />} />
