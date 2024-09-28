@@ -12,7 +12,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <Router basename='Clayflannery.com/pages/AutoMachinist2/src/pages'>
+    <Router basename='/pages/AutoMachinist2/src/pages'>
       <div className="App">
         <Header />
         <Routes>
