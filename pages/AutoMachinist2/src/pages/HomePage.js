@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import ThreeScene from '../components/ThreeSceneSetUp';
 import '../styles/App.css';
 
+function HomePage() {
+  console.log('HomePage component rendered');
+  return <h1>Welcome to the Home Page!</h1>;
+}
+
 const HomePage = () => {
   return (
     <main>
