@@ -7,6 +7,7 @@ import AITools from '../pages/AITools';
 import Pricing from '../pages/Pricing';
 import LogIn from '../pages/LogIn';
 import SignUp from '../pages/SignUp';
+import './styles/App.css';
 
 function App() {
   return (
