@@ -27,16 +27,16 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/Auto">  {/* Removed the basename for now */}
+    <Router basename="/auto">  {/* Removed the basename for now */}
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />  {/* Default route for homepage */}
+          <Route path="/" element={<HomePage />} />  {/* Root route within /automachinist */}
           <Route path="/AITools" element={<AITools />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="*" element={<HomePage />} />  {/* Wildcard route to handle non-existing pages */}
+          <Route path="*" element={<HomePage />} />  {/* Fallback route */}
         </Routes>
         <Footer />
       </div>
