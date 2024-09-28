@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import HomePage from '../pages/HomePage';
@@ -13,13 +13,13 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/ai-tools" component={AITools} />
-          <Route path="/pricing" component={Pricing} />
-          <Route path="/login" component={LogIn} />
-          <Route path="/signup" component={SignUp} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/ai-tools" element={<AITools />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
