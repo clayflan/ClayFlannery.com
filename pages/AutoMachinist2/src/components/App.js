@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename='{process.env.PUBLIC_URL}'>
+    <Router basename='/pages/AutoMachinist2'>
       <div className="App">
         <Header />
         <Routes>
