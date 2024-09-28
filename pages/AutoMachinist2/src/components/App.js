@@ -13,6 +13,7 @@ import '../styles/App.css';
 function App() {
 
   const history = useNavigate(); // Import useNavigate from react-router-dom
+  const location = useLocation();
 
   useEffect(() => {
     // Handle popstate event to manage back button navigation
@@ -36,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename='/pages/AutoMachinist2/src/pages'>
+    <Router basename='{process.env.PUBLIC_URL}'>
       <div className="App">
         <Header />
         <Routes>
