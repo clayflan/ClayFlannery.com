@@ -6,11 +6,11 @@ import '../styles/App.css';
 const HomePage = () => {
   return (
     <main>
-      <section id="home" className="hero">
+      <section id="homepage" className="hero">
 
       console.log('HomePage component rendered');
       return <h1>Welcome to the Home Page!</h1>;
-      
+
         <h1>Revolutionizing Manufacturing</h1>
         <p>Advanced 3D design, precision machining, and cutting-edge printing solutions</p>
         <Link to="/signup" className="cta-button">Get Started</Link>
